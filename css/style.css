@@ -77,6 +77,12 @@ h4 {
 }
 
 /** Header **/
+.webp .header {
+    background-image:url(../img/banner.jpg) ; /* 2. Si el navegador es moderno (Carga rápido) */
+}
+.no-webp .header {
+    background-image: url(../img/banner.jpg); /* 3. Si el navegador es viejo (Carga seguro) */
+}
 .header {
     background-image: url(../img/banner.jpg);
     height: 60rem;
