@@ -204,11 +204,13 @@ h4 {
 .widget-curso {
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
-.widget-curso: last-of-type {
+.widget-curso:last-of-type {
     border: none;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .widget-curso__label,
@@ -227,8 +229,11 @@ h4 {
 
 .footer {
     background-color: var(--negro);
-    padding-bottom: 3rem;
+    padding-bottom: 3rem 0;
     margin-top: 4rem;
+}
+.footer .logo__nombre {
+    color: var(--blanco)
 }
 
 /** Sobre nosotros **/
@@ -274,13 +279,16 @@ h4 {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .formulario {
 background-color: var(--blanco);
 margin: -5rem auto 0 auto ;
 width: 95%;
+max-width: 80rem;
 padding: 5rem;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
 }
 .campo {
     display: flex;
@@ -295,7 +303,10 @@ padding-right: 2rem;
 .campo__field {
     flex: 1;
     border: 1px solid var(--gris);
+    padding: 1rem;
+    border-radius: 0.4rem;
 }
-.campo__field--textarea {
+.campo .campo__field--textarea {
     height: 20rem;
+    resize: none;
 }
